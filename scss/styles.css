@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900);
+.password_conditions {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 14px;
+  color: rgba(128, 128, 128, 0.959);
+  align-items: start;
+  text-align: center;
+}
+
+#datepicker {
+  display: flex;
+  align-self: center;
+}
+
+.register_button {
+  display: flex;
+  height: 20px;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 10%;
+  padding: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  background-image: repeating-linear-gradient(90deg, rgba(20, 25, 25, 0.6), rgba(25, 25, 25, 0.6) 10%, #4c4c4c 10%, #4c4c4c 20%);
+  background-size: 100%;
+  transition: background 0.3s ease-in-out;
+}
+
+.register_button p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  text-align: center;
+}
+
+.register_button:hover {
+  background-position: 150px;
+}
+
+.good {
+  color: rgba(30, 185, 30, 0.864) !important;
+}
+
+.bad {
+  color: rgba(216, 40, 40, 0.778) !important;
+}

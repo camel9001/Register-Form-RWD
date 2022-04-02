@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="scss/style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet">  
+</head>
+<body>
+
+<form id="formularz" method="post" action="">
+  <div class="container">
+    <hr>
+    <h1>Register</h1>
+    <hr>
+    <p>Please fill in this form to create an account</p>
+    <hr>
+    <label for="name">Login:</label>
+    <input type="text" id="name" name="name"></input>
+    <span class="announcement"></span>
+    <label><b>Date of birth:</b></label>
+    <input type="text" id="datepicker" required>
+    <label for="email"><b>E-mail:</b></label>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+    <span class="announcement"></span>
+    <label for="txtConfirmPassword">
+      Password </label>
+    <span class="password_conditions">(password must contain at least 8 letters, at least one uppercase letter and at least one number)</span>
+    <input name="txtPassword" type="password" id="psw" title="password must contain at least 8 letters, at least one uppercase letter and at least one number"
+        class="form-control" placeholder="Enter Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
+    <label for="txtConfirmPassword">
+        Confirm Password: </label>
+    <input name="txtConfirmPassword" type="password" id="psw-repeat" class="form-control"
+        placeholder="Confirm Password" />
+    <hr>
+    <p>By creating an account you agree to our terms & privacy.</p>
+    <hr>
+    <button type="submit" class="register_button" id="submit"><p>REGISTER</p></button>
+    <hr>
+  </div>
+
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

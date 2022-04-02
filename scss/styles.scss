@@ -1,0 +1,55 @@
+@import 'mixin', 'variables';
+
+.password_conditions {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 14px;
+    color: $color_theme3;
+    align-items: start;
+    text-align: center;
+};
+
+#datepicker {
+    display: flex;
+    align-self: center;
+}
+.register_button {
+    display: flex;
+    height: 20px;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 10%;
+    padding: 25px;
+    @include font_face(16px);
+    border: none;
+    border-radius: 20px;
+    color: black;
+    background-image: repeating-linear-gradient(90deg, 
+    rgba(20, 25, 25, 0.6),
+    rgba(25, 25, 25, 0.6) 10%, 
+    #4c4c4c 10%, #4c4c4c 20%);
+    background-size: 100%;
+    transition: background 0.3s ease-in-out;
+    
+    p {
+        @include font-face(16px);
+        display: flex;
+        text-align: center;              
+    }
+}
+.register_button:hover {
+background-position: 150px;
+};
+
+.good {
+    color: $color_green !important;
+};
+.bad {
+    color: $color_red !important;
+};
+
+
+
